@@ -1,0 +1,241 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: url("Scenery.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(29, 17, 17, 0.5);
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39,1), transparent);
+    z-index: 100;
+}
+
+.logo p {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    list-style-type: none;
+}
+
+.menu ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 25px;
+}
+
+.link:hover , .active {
+    border-bottom: 1px solid #fff;
+}
+
+.button .btn {
+    width: 100px;
+    height: 35px;
+    font-weight: 500;
+    background: rgba(255,255,255,0.4);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#signin-btn {
+    margin-left: 15px;
+}
+
+#signin-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    transition: 0.3s;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 500px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.login-form {
+    position: absolute;
+    right: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.login-form header {
+    color: #fff;
+    font-size: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin-right: 130px;
+}
+
+.for-password {
+    color: #fff;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.register-form {
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.register-form header {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 140px;
+    margin-top: 5px;
+    padding-bottom: 15px;
+}
+
+.nameFL {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.input-field {
+    font-size: 15px;
+    margin: 10px;
+    background: rgba(255,255,255,0.4);
+    color: #000;
+    height: 40px;
+    width: 60%;
+    padding: 0 10px 0 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    transition: .2s ease;
+}
+
+.input-field:hover {
+    background: rgba(255,255,255, 0.6);
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+
+.input-box i {
+    position: relative;
+    right: 45px;
+    color: #fff;
+}
+
+.submit {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    height: 25px;
+    width: 20%;
+    border: none;
+    border-radius: 20px;
+    margin-left: 120px;
+    outline: none;
+    cursor: pointer;
+    background: rgba(255,255,255,0.8);
+    transition: .3s ease-in-out;
+}
+
+.submit:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.two-col {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.two-col .one {
+    display: flex;
+    gap: 5px;
+    margin-left: 15px;
+}
+
+.two label a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 100px;
+}
+
+.two label a:hover {
+    text-decoration: underline;
+}
+
+.top span {
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.top span a {
+    font-weight: 600;
+    color: rgb(0, 17, 255);
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.icon {
+    margin-top: 5px;
+    margin-left: 140px;
+}
+
+.icon h5 {
+    color: #fff;
+    padding-bottom: 5px;
+}
+
+.icon a {
+    margin-left: 1px;
+}
